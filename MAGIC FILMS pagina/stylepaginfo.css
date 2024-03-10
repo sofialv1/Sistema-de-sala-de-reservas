@@ -1,0 +1,43 @@
+
+
+body{
+    /*background-image: url(imagenes\ de\ pelis/1f1.jpg);*/
+    background-color: #ee090972;
+    min-height: 90vh;
+    color: #faf3f3;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.containes-inf {
+    max-width: 1000px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+}
+
+header  {
+    background-position: center center;
+    background-repeat: center ;
+    background-size: cover;
+    min-height: 10vh;
+    align-items: center ;
+    display: flex;
+    justify-content: center;
+}
+.menu-inf {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-right: 20px;
+    display: block;
+    display: flex;
+    justify-content: center;
+}.text{
+    margin-left: 200px;
+}#h4{
+    margin-left: 200px;
+}
+#h3{
+    background-position: center center;
+    background-repeat: center ;
+    margin-left: 200px;
+}
