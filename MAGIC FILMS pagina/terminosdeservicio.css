@@ -1,0 +1,72 @@
+
+*{
+    list-style: none;
+}
+
+body{
+    /*background-image: url(imagenes\ de\ pelis/1f1.jpg);*/
+    background: linear-gradient(45deg,darkred,black);
+    background-size: 400%,400%;
+    position: relative;
+    animation: cambiar 5s ease infinite;
+    min-height: 98vh;
+    color: #faf3f3;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
+.containes-inf {
+    max-width: 1000px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    background-position: center center;
+    background-repeat: center ;
+    background-size: cover;
+    min-height: 10vh;
+    align-items: center ;
+    display: flex;
+    justify-content: center;
+    margin-left: 60px;
+}
+h3{
+  font-size: 20px;  
+  margin:auto;
+  margin-left: 500px;
+  padding-right: 350px;
+}
+p{
+    color: white;
+    font-size: 20px;
+    margin-right: 400px;
+    padding-left: 300px;
+}
+h4{
+    font-size: 20px;  
+    padding-top:10px;
+    margin-left: 590px;
+}
+.menu-inf {
+    color: #FFFFFF;
+    font-size: 20px;
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+.text{
+    margin-left: 200px;
+}
+#h4{
+    margin-left: 200px;
+}
+#h3{
+    font-size: 20px;
+    margin-left: 860px;
+}

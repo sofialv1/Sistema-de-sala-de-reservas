@@ -1,0 +1,116 @@
+*{
+    margin:0px;
+padding: 0px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.box{
+    width: 100%;
+    height: 100vh;
+    color:#fff;
+    background: linear-gradient(45deg,darkred,red,black);
+    background-size: 400%,400%;
+    position: relative;
+    animation: cambiar 10s ease infinite;
+}
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
+
+.a{
+    position: absolute;
+    z-index: 3;
+}
+.a img{
+    background-color: transparent;
+    box-shadow: none;
+    margin: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 10px solid black;
+    border-radius: 4px;
+    box-shadow: 1px 1px 20px 10px color(from black srgb r g b);
+}
+.a img:hover{
+    margin: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 1px solid black;
+    border-style: none;
+    border-radius: 4px;
+    box-shadow: 1px 1px 30px 40px color(from black srgb r g b);
+    background-color: black;
+}
+.a img::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    width: 100%;
+}
+.trailer{
+position: absolute;
+top:0;
+left: 0;
+width: 100%;
+height: 500px;
+object-fit: cover;
+}
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+}
+.b{
+    position: absolute;
+    z-index: 2;
+}
+.b img{
+    background-color: transparent;
+    margin-left:700px;  
+    margin-top: 40px;
+    width: 1000px;
+}
+#container{
+    /*widt:70%;*/
+    width: 1100px;
+    margin: 0px auto;
+}
+#content{
+    float: left;
+    width: calc(80% - 80px);
+    padding: 40px;
+    margin-top: 480px;
+    margin-left: 120px;
+}
+.article{
+    color:white;    
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 20px;
+}
+.article:first-child{
+    padding-top:10px;
+    border-top: 1px solid #eee;
+}
+.article h2{
+    font-size: 35px;
+}
+.d{
+    position: absolute;
+}
+.d img{
+    background-color: transparent;
+    box-shadow: none;
+    margin-left: 1650px;
+    margin-top: 580px;
+}

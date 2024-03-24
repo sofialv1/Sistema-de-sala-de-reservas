@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserva de silla</title>
+  <link rel="stylesheet" href="reserva de silla y horario.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Reserva de silla para Magic Films</h2>
+    <form action="reserva de silla.php" method="post">
+      <label for="silla">Seleccione su silla:</label>
+      <select id="silla" name="silla">
+        <option value="A1">A1</option>
+        <option value="A2">A2</option>
+        <option value="A2">A3</option>
+        <option value="A2">A4</option>
+        <option value="A2">A5</option>
+        <option value="A2">A6</option>
+        <option value="A2">A7</option>
+        <option value="A2">A8</option>
+        <option value="A2">A9</option>
+        <option value="A2">A10</option>
+        <!-- Agrega más opciones según la disposición de las sillas -->
+      </select>
+
+      <label for="fecha">Seleccione la fecha:</label>
+      <input type="date" id="fecha" name="fecha">
+
+      <label for="hora">Seleccione la hora:</label>
+      <input type="time" id="hora" name="hora">
+
+      <input type="submit" value="Reservar">
+    </form>
+  </div>
+</body>
+</html>

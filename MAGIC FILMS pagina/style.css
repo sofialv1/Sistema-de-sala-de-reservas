@@ -3,6 +3,15 @@
 
 body{
     font-family:'Bebas Neue',cursive;
+   background: linear-gradient(45deg,darkred,black);
+    background-size: 400%,400%;
+    position: relative;
+    animation: cambiar 10s ease infinite; 
+}
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
 }
 /* margin: 0;: Establece el margen exterior de un elemento a 0. Esto significa que no habrá espacio entre el borde del elemento y los elementos adyacentes.
 padding: 0;: Define el relleno interno de un elemento como 0. El contenido dentro del elemento no tendrá ningún espacio adicional entre su borde y el contenido real.
@@ -14,12 +23,12 @@ list-style: none;: Elimina los marcadores o numeración de las listas (por ejemp
 
 
 * {
-
     margin: 0;
     padding: 0; 
     box-sizing: border-box;
     text-decoration:none;
     list-style:none;
+    letter-spacing: 1.6px;
 }
 
 
@@ -28,15 +37,12 @@ list-style: none;: Elimina los marcadores o numeración de las listas (por ejemp
 
      body{
         background-color: #f0ecec;
-        color: #e90e0e;
+        color: white;
         .bebas-neue-regular {
             font-family: "Bebas Neue", sans-serif;
             font-weight: 1400;
             font-style: normal;
-    
-           
-          }
-          
+          }     
 }
   /* max-width es el rango maximo de 1200px la pag y margin es de izquierda a derecha de las imagenes de las pelis para que no se desborde 
   el contenido */  
@@ -90,14 +96,13 @@ justify-content: space-between;: Distribuye el espacio disponible entre los elem
      /* logo , tamaño y color */
     .logo {
         font-size: 35px;
-        color: #ef0b0b;
+        color: white;
        
     }
     /* este afecta las listas */
     .menu .navbar ul li{
         position: relative;
         float: left;
-
     }
     /*  font-size: 22px; = tamaño de la letra en el menu
         padding: 20px; = modifica el tamño de los enlaces del menu 
@@ -106,16 +111,14 @@ justify-content: space-between;: Distribuye el espacio disponible entre los elem
     .menu .navbar ul li a {
         font-size: 25px;/*tamaño del texto dentro del menu*/
         padding: 10px; /*ancho en separacion del contenido del menu*/
-        color: #f20404b0;
+        color: red;
         display: block;
     }
     /* en este comando se esta ejecutando el cambio de color de las letras en el menu en caso
      de que el mause este sobre la letra a escoger */
 
     .menu .navbar ul li a:hover {
-
-        color: #fdfcff;
-
+        color: red;
     }
 
     #menu{
@@ -130,8 +133,6 @@ justify-content: space-between;: Distribuye el espacio disponible entre los elem
     }
     .header-content {/* configuracion del contenido*/
         display: flex;/* pone de manera horizontal el contenido de la pagina*/
-
-
     }
     .header-1 { /*configuracion del texto las mejores peliculas su ubicacion*/
       display: flex;
@@ -139,7 +140,7 @@ justify-content: space-between;: Distribuye el espacio disponible entre los elem
       width: 50%;
       align-self: flex-end;
     }
-    .header-1 img {/*onfiguracion del texto las mejores peliculas*/
+    .header-1 img {/*configuracion del texto las mejores peliculas*/
      width: 300px;
     }
     .header-2 { /*configuracion del texto las mejores peliculas su ubicacion*/
@@ -147,7 +148,7 @@ justify-content: space-between;: Distribuye el espacio disponible entre los elem
         margin-top: 80px;
         text-align: end;
     }
-    .header-2 h1 {/*onfiguracion del texto las mejores peliculas*/
+    .header-2 h1 {/*configuracion del texto las mejores peliculas*/
         color:#ee090972;/* color del texto del header 2*/
         font-size: 80px;
         line-height: 80px;
@@ -182,7 +183,7 @@ justify-content: space-between;: Distribuye el espacio disponible entre los elem
 
     hr{ /* color de la linea que separa los titulos que estan sobre las peliculas , tambien se separan
         los detalles de las misma , como lo son la altura y distancia */
-        border: 1px solid #e51010; /* grosor y color de la linea */
+        border: 1px solid white; /* grosor y color de la linea */
         width: 100%;/* longitud de la linea*/
         margin-bottom: 10px;/* abre espacios*/
     } /*los box son las div del html donde se estan guardando las imagenes */
@@ -202,24 +203,13 @@ justify-content: space-between;: Distribuye el espacio disponible entre los elem
     .box-1:nth-child(1),
     .box-1:nth-child(2),
     .box-1:nth-child(3),
-    .box-1:nth-child(4),
-    .box-1:nth-child(5),
-    .box-1:nth-child(6),
-    .box-1:nth-child(7),
-    .box-1:nth-child(8){
+    .box-1:nth-child(4){
         display: inline-block;
     }
     .box-2:nth-child(1),
     .box-2:nth-child(2),
     .box-2:nth-child(3),
-    .box-2:nth-child(4), 
-    .box-2:nth-child(5),
-    .box-2:nth-child(6),
-    .box-2:nth-child(7),
-    .box-2:nth-child(8),
-    .box-2:nth-child(9),
-    .box-2:nth-child(10),
-    .box-2:nth-child(11){
+    .box-2:nth-child(4){
         display: inline-block;  
     } 
     .load-more{ /*esta es la configuracion para el boton de mas contenido */
@@ -227,54 +217,54 @@ justify-content: space-between;: Distribuye el espacio disponible entre los elem
        display: inline-block;
        padding: 10px 25pX;
         border-radius: 15px;
-        border: 1px solid #FF2F28;
-        color: #FF2F28;
+        border: 1px solid white;
+        color: white;
         font-size: 16px;
         cursor: pointer;
         align-self: flex-end; /*este comando arroja para la derecha*/
     }
 
 .load-more:hover { /* este configura el boton de mas contenido*/
-    background-color: #f90202;
+    background-color: rgba(255, 0, 0, 0.548);
     color: #FFFFFF;
 }
 .content img{ /*en este comando se ajusta el tamaño del espacio de las imagenes y su texto en la descripcion */ 
 
     margin-bottom: 15px;
 }
-
 .content h3{
 font-size: 20px;
 margin-bottom: 20px;/*separacion para abajo del texto */
 }
 .content{
-    color: #f90404;
+    color: white;
     font-size: 20px;
 }
 .footer {
     display:flex;
     justify-content: space-between;
-    align-items: center ;
-    padding: 100px 0;
+    align-items: center;
+    padding: 50px 0;
     margin-top: 100px;
-    border-top: 1px solid #220bef;
-    align-self: flex-end;
+    border-top: 1px solid white;
 }
-.footer ul a{ /*el floter es la informacion del final de la pagina */
-    display: 30px;
-    
+.footer ul{ /*el floter es la informacion del final de la pagina */
+    display: flex;
 }
-.footer li {
+.footer h3{
+    font-size: 30px;
+}
+.footer a{
     color: #FFFFFF;
     font-size: 20px;
     margin-right: 20px;
     display: block;
 }
 .footer a:hover {
-    color: #e51010 ;
+    color: red;
 
 }
-@media (max-width:991px){
+@media (max-width:1920px){
 
 .menu{
     padding: 20 0 0px;
@@ -286,13 +276,17 @@ margin-bottom: 20px;/*separacion para abajo del texto */
     position: absolute;
     top:100%;
     left: 0;
-    right: 0;
-    background-color: #0e0e0e;
+    right: 100px;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.658);
     display: none;
 
 }
 .menu .navbar ul li{
     width: 50%;
+}
+.menu .navbar ul li a{
+    color: white;
 }
 .btn-1{
     display: none;
@@ -302,7 +296,7 @@ margin-bottom: 20px;/*separacion para abajo del texto */
 }
 
 .header-content{ /* informacion de los titulos y parrafos sobre y debajo de las imagenes*/
-    flex-direction: column;
+   flex-direction: column;
     padding: 180px 30px 30px 30px0;
 }
 .header-1 {
@@ -312,6 +306,26 @@ margin-bottom: 20px;/*separacion para abajo del texto */
 .hearder-2{
     width: 100%;
     text-align: center;
-}    
+}
 } /* en estos comandos esta la configuracion del menu y su contenido*/
+
+.content {
+    position: relative;
+    animation-name: slide-in;
+    animation-duration: 2s;
+    }
+    
+    @keyframes slide-in {
+    from {
+    transform: translateY(-100%);
+    }
+    to {
+    transform: translateY(0);
+    }
+    }
+
+.poster:hover {
+transform: scale(1.2);
+transition: all 0.5s ease;
+}
 
